@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    # @article shouldnt be nil in view (calling @article.errors.any? would throw an error)
+    # @article shouldnt be nil in our view (calling @article.errors.any? would throw an error)
     @article = Article.new
   end
 
