@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     # click on save button
     if @article.save
-      # go to just created article site /articles/'id' master
+      # go to just created article site /articles/'id'
       redirect_to @article
     else
       # an error in saving entry occured
